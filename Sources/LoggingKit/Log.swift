@@ -27,7 +27,7 @@ import CoreGraphics.CGGeometry
 /// ```
 public struct Log {
 	/// General Logger for anything to use as a starting point
-	@available(macOS 11.0, *)
+	@available(macOS 11.0, iOS 14.0, *)
 	public static let general = Logger(subsystem: "com.loggingKit.general", category: "general")
 }
 
