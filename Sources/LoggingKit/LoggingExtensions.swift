@@ -20,6 +20,10 @@ public extension Error {
 	func description() -> String {
 		return (self as NSError).description
 	}
+
+	func debugDescription() -> String {
+		return (self as NSError).debugDescription
+	}
 }
 
 extension CGPoint: @retroactive CustomStringConvertible {
