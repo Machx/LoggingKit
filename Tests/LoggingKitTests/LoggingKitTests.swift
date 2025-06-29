@@ -5,13 +5,16 @@ import Testing
 	Log.general.info("Hello, World!")
 }
 
-struct MyError: Error, CustomStringConvertible, CustomDebugStringConvertible {
+struct MyError1: Error, CustomStringConvertible {
 	var description: String = "This is a test error"
+}
+
+struct MyError2: Error, CustomDebugStringConvertible {
 	var debugDescription: String = "This is an even more lengthy description."
 }
 
 @Test func testErrorDescription() async throws {
-	Log.general.error("MyError: \(MyError().description())")
+	Log.general.error("MyError: \(MyError1().description())")
 }
 
 @Test func testDebugDescription() async throws {
