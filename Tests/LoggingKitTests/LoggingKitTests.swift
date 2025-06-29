@@ -18,5 +18,5 @@ struct MyError2: Error, CustomDebugStringConvertible {
 }
 
 @Test func testDebugDescription() async throws {
-	Log.general.error("MyError: \(MyError().debugDescription())")
+	Log.general.error("MyError: \(MyError2().debugDescription())")
 }
