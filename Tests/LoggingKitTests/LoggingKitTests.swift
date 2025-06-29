@@ -5,9 +5,10 @@ import Testing
 	Log.general.info("Hello, World!")
 }
 
+struct MyError: Error, CustomStringConvertible {
+	var description: String = "This is a test error"
+}
+
 @Test func testErrorDescription() async throws {
-	struct MyError: Error, CustomStringConvertible {
-		var description: String = "This is a test error"
-	}
 	Log.general.error("MyError: \(MyError().description())")
 }
