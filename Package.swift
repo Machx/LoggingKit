@@ -7,7 +7,9 @@ let package = Package(
     name: "LoggingKit",
 	platforms: [
 		.iOS(.v18),
-		.macOS(.v10_15)
+		.macOS(.v10_15),
+		.tvOS(.v14),
+		.watchOS(.v7)
 	],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
