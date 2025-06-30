@@ -15,7 +15,6 @@
 
 import Foundation
 import os.log
-import CoreGraphics.CGGeometry
 
 /// Log is a struct meant to be a central access point & extension for more logs.
 ///

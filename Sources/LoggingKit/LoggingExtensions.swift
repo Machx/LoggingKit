@@ -14,6 +14,7 @@
 /// limitations under the License.
 
 import Foundation
+import CoreGraphics.CGGeometry
 
 public extension Error {
 	/// Convenience function to add a description onto Error for printing in Logs.
